@@ -53,37 +53,37 @@ begin
     
     test_process : process
     begin
-        w_sw <= x"0"; wait for 10 ns;
+        w_sw <= x"0"; wait for 20 ns;
             assert seg = "1000000" report "bad 0" severity failure;
-        w_sw <= x"1"; wait for 10 ns;
+        w_sw <= x"1"; wait for 20 ns;
             assert seg = "1111001" report "bad 1" severity failure;
-        w_sw <= x"2"; wait for 10 ns;
+        w_sw <= x"2"; wait for 20 ns;
             assert seg = "0100100" report "bad 2" severity failure;
-        w_sw <= x"3"; wait for 10 ns;
+        w_sw <= x"3"; wait for 20 ns;
             assert seg = "0110000" report "bad 3" severity failure;
-        w_sw <= x"4"; wait for 10 ns;
+        w_sw <= x"4"; wait for 20 ns;
             assert seg = "0011001" report "bad 4" severity failure;
-        w_sw <= x"5"; wait for 10 ns;
+        w_sw <= x"5"; wait for 20 ns;
             assert seg = "0010010" report "bad 5" severity failure;
-        w_sw <= x"6"; wait for 10 ns;
+        w_sw <= x"6"; wait for 20 ns;
             assert seg = "0000010" report "bad 6" severity failure;
-        w_sw <= x"7"; wait for 10 ns;
+        w_sw <= x"7"; wait for 20 ns;
             assert seg = "1111000" report "bad 7" severity failure;
-        w_sw <= x"8"; wait for 10 ns;
+        w_sw <= x"8"; wait for 20 ns;
             assert seg = "0000000" report "bad 8" severity failure;
-        w_sw <= x"9"; wait for 10 ns;
+        w_sw <= x"9"; wait for 20 ns;
             assert seg = "0011000" report "bad 9" severity failure;
-        w_sw <= x"A"; wait for 10 ns;
+        w_sw <= x"A"; wait for 20 ns;
             assert seg = "0001000" report "bad A" severity failure;
-        w_sw <= x"B"; wait for 10 ns;
+        w_sw <= x"B"; wait for 20 ns;
             assert seg = "0000011" report "bad B" severity failure;
-        w_sw <= x"C"; wait for 10 ns;
+        w_sw <= x"C"; wait for 20 ns;
             assert seg = "0100111" report "bad C" severity failure;
-        w_sw <= x"D"; wait for 10 ns;
+        w_sw <= x"D"; wait for 20 ns;
             assert seg = "0100001" report "bad D" severity failure;
-        w_sw <= x"E"; wait for 10 ns;
+        w_sw <= x"E"; wait for 20 ns;
             assert seg = "0000110" report "bad E" severity failure;
-        w_sw <= x"F"; wait for 10 ns;
+        w_sw <= x"F"; wait for 20 ns;
             assert seg = "0001110" report "bad F" severity failure;
         
     wait;
