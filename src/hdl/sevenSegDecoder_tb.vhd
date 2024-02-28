@@ -60,9 +60,9 @@ begin
         w_sw <= x"2"; wait for 20 ns;
             assert w_seg = "0100100" report "bad 2" severity failure;
         w_sw <= x"3"; wait for 20 ns;
-            assert w_segeg = "0110000" report "bad 3" severity failure;
+            assert w_seg = "0110000" report "bad 3" severity failure;
         w_sw <= x"4"; wait for 20 ns;
-            assert w_segeg = "0011001" report "bad 4" severity failure;
+            assert w_seg = "0011001" report "bad 4" severity failure;
         w_sw <= x"5"; wait for 20 ns;
             assert w_seg = "0010010" report "bad 5" severity failure;
         w_sw <= x"6"; wait for 20 ns;
