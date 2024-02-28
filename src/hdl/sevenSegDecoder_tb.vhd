@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: USAFA
+-- Engineer: Brandon Son
 -- 
--- Create Date: 02/27/2024 08:11:00 PM
--- Design Name: 
+-- Create Date: 02/27/2024
+-- Design Name: sevenSegDecoder
 -- Module Name: sevenSegDecoder_tb - Behavioral
--- Project Name: 
+-- Project Name: sevenSegDecoder
 -- Target Devices: 
 -- Tool Versions: 
 -- Description: 
