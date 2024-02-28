@@ -41,6 +41,14 @@ architecture Behavioral of sevenSegDecoder is
     signal c_Sa, c_Sb, c_Sc, c_Sd, c_Se, c_Sf, c_Sg : std_logic := '1';
 
 begin
+    o_S(0) <= c_Sg;
+    o_S(1) <= c_Sf;
+    o_S(2) <= c_Se;
+    o_S(3) <= c_Sd;
+    o_S(4) <= c_Sc;
+    o_S(5) <= c_Sb;
+    o_S(6) <= c_Sa;
+
     c_Sa <= '1' when ( (i_D = x"1") or
                       (i_D = x"4") or
                       (i_D = x"B") or
@@ -83,13 +91,6 @@ begin
    c_Sg <= '1' when ( (i_D = x"0") or
                       (i_D = x"1") or
                       (i_D = x"7") ) else '0';
-    
-    o_S(0) <= c_Sg;
-    o_S(1) <= c_Sf;
-    o_S(2) <= c_Se;
-    o_S(3) <= c_Sd;
-    o_S(4) <= c_Sc;
-    o_S(5) <= c_Sb;
-    o_S(6) <= c_Sa;
+
 
 end Behavioral;
